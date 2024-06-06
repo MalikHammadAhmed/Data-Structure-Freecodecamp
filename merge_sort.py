@@ -47,3 +47,5 @@ def merge(left,right):
             l.append(right[j])
             j+=1
             n=0
+
+new_list = [1,2,3]
