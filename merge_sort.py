@@ -46,3 +46,4 @@ def merge(left,right):
         else:
             l.append(right[j])
             j+=1
+            n=0
