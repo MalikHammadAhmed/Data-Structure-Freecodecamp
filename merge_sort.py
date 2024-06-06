@@ -48,4 +48,4 @@ def merge(left,right):
             j+=1
             n=0
 
-new_list = [1,2,3]
+new_list = [1,2,3,4]
