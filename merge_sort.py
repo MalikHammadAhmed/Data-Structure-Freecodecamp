@@ -46,6 +46,28 @@ def merge(left,right):
         else:
             l.append(right[j])
             j+=1
-            n=0
+    
+    while i < len(left):
+        l.append(left[i])
+        i+=1
 
-new_list = [1,2,3,4]
+    while j < len(right):
+        l.append(right[j])
+        j+=1
+    
+    return l
+
+def verify_sorted(list):
+    n = len(list)
+
+    if n==0 or n==1:
+        return True
+    
+    return list[0] < list[1] and verify_sorted(list[1:])
+
+alist = [54, 62 , 93, 17, 77, 31, 44, 55, 20]
+l = merge_sort(alist)
+print(alist)
+print(l)
+print(verify_sorted(alist))
+print(verify_sorted(l))
